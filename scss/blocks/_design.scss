@@ -1,0 +1,78 @@
+.design {
+    background-color: rgb(227, 234, 241);
+}
+
+.design__inner {
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("../img/main-bgimg.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 950px) top;
+}
+
+.design__heading {
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+    color: rgb(54, 83, 107);
+}
+
+.design__info {
+    max-width: 440px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: rgb(108, 130, 148);
+}
+    
+.design__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 769px) {
+  .design__inner {
+      padding-top: 0;
+      padding-bottom: 80px;
+      flex-direction: column-reverse;
+      background-image: none;
+  }
+
+  .design__img {
+      width: 165px;
+      height: 300px;
+  }
+  
+  .design__heading {
+      margin: 0;
+      text-align: center;
+  }
+
+  .design__info {
+      max-width: 570px;
+      text-align: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .design__list {
+      margin-left: 25px;
+  }
+  
+  .design__img {
+    width: 150px;
+    height: 270px;
+  }
+
+  .design__heading {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+
+}
