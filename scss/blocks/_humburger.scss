@@ -1,0 +1,17 @@
+.humburger-btn {
+    display: none;
+}
+
+.humburger-btn__img {
+    width: 28px;
+    height: 17px;
+}
+
+@media only screen and (max-width: 580px) {
+  .humburger-btn {
+      display: block;
+      background-color: transparent;
+      border: none;  
+      cursor: pointer;
+  }
+}
