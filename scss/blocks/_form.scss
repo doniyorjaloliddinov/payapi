@@ -1,0 +1,73 @@
+.form__input {
+    width: 440px;
+    height: 48px;
+    padding: 15px 25px;
+    background-color: rgb(251, 252, 254);
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+    border: none;
+    position: relative;
+}
+
+.form__input::placeholder {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgb(54, 83, 107);
+    opacity: 0.5;
+}
+
+.hero-btn {
+    position: absolute;
+    left: 630px;
+}
+
+@media only screen and (max-width: 1201px) {
+  .hero-btn {
+      left: 350px;
+  }
+}
+
+@media only screen and (max-width: 831px) {
+    .hero-btn {
+      left: 450px;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+  .form__input {
+      margin-left: 45px;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+    .hero-btn {
+        left: 360px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .form__input {
+      width: 315px;
+      display: block;
+  }
+
+  .form__btn {
+    //   width: 440px;
+      margin-top: 15px;
+      margin-left: -293px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .form__input {
+      margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  .form__btn {
+      width: 327px;
+      margin-left: -363px;
+  }
+}
