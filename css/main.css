@@ -808,3 +808,74 @@ body {
     width: 100px;
   }
 }
+
+.implement {
+  padding: 120px 0;
+  background-color: #e3eaf1;
+}
+
+.implement__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.implement__img {
+  width: 445px;
+  height: 284px;
+}
+
+.implement__heading {
+  margin: 0;
+  font-family: 'DM Serif Display';
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.369231px;
+  color: #36536b;
+}
+
+.implement__info {
+  max-width: 440px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #6c8294;
+}
+
+@media only screen and (max-width: 769px) {
+  .implement__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .implement__img {
+    width: 391px;
+    height: 256px;
+  }
+  .implement__heading {
+    text-align: center;
+  }
+  .implement__info {
+    max-width: 573px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .implement__img {
+    width: 328px;
+    height: 209px;
+  }
+  .implement__heading {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
