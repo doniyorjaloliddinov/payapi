@@ -1,6 +1,16 @@
 body {
+    background-color: rgb(237,243,248);
     background-image: url("../img/main-bgimg.png");
     background-repeat: no-repeat;
-    background-position: top;
+    background-size: 780px 780px;
+    background-position: calc(50% + 520px)
+                         calc(50% - 150px);
     z-index: auto;
+}
+
+@media only screen and (max-width: 769px) {
+  body {
+    background-position: calc(50% - 2px)
+                         calc(50% - 350px);
+  }
 }

@@ -11,4 +11,14 @@
     line-height: 18px;
     letter-spacing: -0.115385px;
     color: rgb(251, 252, 254);
+    cursor: pointer;
 }
+
+.all-btn:hover {
+    background-color: rgb(218, 109, 151);
+}
+
+.all-btn:active {
+    background-color: rgb(186, 66, 112);
+}
+

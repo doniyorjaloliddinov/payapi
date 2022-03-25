@@ -1,0 +1,61 @@
+.start {
+    padding: 60px 0;
+    background-color: rgb(227, 234, 241);
+}
+
+.start__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.start__heading {
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+    color: rgb(54, 83, 107);
+}
+
+@media only screen and (max-width: 1300px) {
+  .start__btn {
+      left: 1000px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .start__btn {
+      left: 960px;
+  }
+}
+
+@media only screen and (max-width: 1135px) {
+  .start__inner {
+      flex-direction: column;
+  }
+
+  .start__btn {
+      margin-top: 20px;
+      position: unset;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .start__heading {
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+  }
+  
+    .start__btn {
+      margin-right: auto;
+      margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  .start__btn {
+      max-width: 265px;
+  }
+}
