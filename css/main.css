@@ -1087,7 +1087,6 @@ body {
 
 .start {
   padding: 60px 0;
-  background-color: #e3eaf1;
 }
 
 .start__inner {
@@ -1240,5 +1239,120 @@ body {
   }
   .footer__navbar-item:nth-child(3) {
     margin-left: 0;
+  }
+}
+
+.pricing__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pricing__heading {
+  font-family: 'DM Serif Display';
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -0.430769px;
+  color: #36536b;
+}
+
+.pricing__plans {
+  max-width: 345px;
+}
+
+.pricing__palans-heading {
+  margin-bottom: 15px;
+  font-family: 'DM Serif Display';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.246154px;
+  color: #ba4270;
+}
+
+.pricing__plans-info {
+  max-width: 300px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #6c8294;
+}
+
+.pricing__plans-price {
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: 'DM Serif Display';
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 72px;
+  letter-spacing: -0.430769px;
+  color: #36536b;
+}
+
+.pricing__item {
+  margin-left: 30px;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #36536b;
+  position: relative;
+}
+
+.pricing__item::before {
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/tick.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 10px;
+  left: -30px;
+  content: "";
+}
+
+.item-opacity {
+  opacity: 0.5;
+}
+
+.item-opacity::before {
+  background-image: none;
+}
+
+.pricing__btn {
+  width: 165px;
+  height: 45px;
+  margin-top: 24px;
+  border: 1px solid #36536b;
+  border-radius: 24px;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.115385px;
+  color: #36536b;
+}
+
+@media only screen and (max-width: 786px) {
+  .pricing__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pricing__heading {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 456px) {
+  .pricing__heading {
+    text-align: unset;
   }
 }

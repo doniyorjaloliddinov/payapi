@@ -1,0 +1,110 @@
+.pricing {
+    // background-color: rgb(227,234,241);
+}
+
+.pricing__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pricing__heading {
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -0.430769px;
+    color: rgb(54, 83, 107);
+}
+
+.pricing__plans {
+    max-width: 345px;
+}
+
+.pricing__palans-heading {
+    margin-bottom: 15px;
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.246154px;
+    color: rgb(186, 66, 112);
+}
+
+.pricing__plans-info {
+    max-width: 300px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: rgb(108, 130, 148);
+}
+
+.pricing__plans-price {
+    margin: 0;
+    margin-bottom: 15px;
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 72px;
+    letter-spacing: -0.430769px;
+    color: rgb(54, 83, 107);
+}
+
+.pricing__item {
+    margin-left: 30px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgb(54, 83, 107);
+    position: relative;
+}
+
+.pricing__item::before {
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/tick.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10px;
+    left: -30px;
+    content: "";
+}
+
+.item-opacity {
+    opacity: 0.5;
+}
+
+.item-opacity::before {
+    background-image: none;
+}
+
+.pricing__btn {
+    width: 165px;
+    height: 45px;
+    margin-top: 24px;
+    border: 1px solid rgb(54, 83, 107);
+    border-radius: 24px; 
+    background-color: transparent; 
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.115385px;
+    color: rgb(54, 83, 107);  
+}
+
+@media only screen and (max-width: 786px) {
+  .pricing__inner {
+      flex-direction: column;
+  }
+
+  .pricing__heading {
+      text-align: center;
+  }
+}
+
+@media only screen and (max-width: 456px) {
+  .pricing__heading {
+      text-align: unset;
+  }
+}
