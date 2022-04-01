@@ -1,0 +1,118 @@
+.contact__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact__heading {
+    max-width: 730px;
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -0.430769px;
+    color: rgb(54, 83, 107);
+}
+
+.contact__input {
+    width: 445px;
+    margin-top: 15px; 
+    margin-bottom: 15px;
+    padding: 15px;
+    display: flex;
+    border: none;
+    border-bottom: 1px solid rgb(146,163,177);
+    background-color: transparent;
+}
+
+.contact__input:hover {
+    border-bottom: 1px solid rgb(54, 83, 107);
+}
+
+.contact__input:active {
+    border-bottom: 1px solid rgb(255, 0, 0);
+}
+
+.contact__input::placeholder {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.115385px;
+    color: rgb(54, 83, 107);
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.contact__info {
+    margin-left: 40px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.115385px;
+    color: rgb(54, 83, 107);
+    position: relative;
+}
+
+.contact__info::before {
+    width: 25px;
+    height: 25px;
+    background-color:  rgb(54, 83, 107);
+    opacity: 0.25;
+    position: absolute;
+    left: -40px;
+    content: "";
+}
+
+.contact__info:active:before {
+    margin: 8px;
+    background-color: transparent;
+    background-image: url("../img/tick.png");
+    background-repeat: no-repeat;
+}
+
+.contact__clients-heading {
+    max-width: 445px;
+    text-align: center;
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.184615px;
+    color: rgb(54, 83, 107);
+    opacity: 0.75;
+}
+
+.contact__img {
+    filter: invert(27%) sepia(15%) saturate(1500%) hue-rotate(165deg) brightness(93%) contrast(81%);
+}
+
+@media only screen and (max-width: 1030px) {
+  .contact__inner {
+      flex-direction: column;
+  }
+
+  .contact__heading {
+      max-width: 950px;
+      text-align: center;
+  }
+
+  .contact__clients-heading {
+      max-width: none;
+  }
+}
+
+@media only screen and (max-width: 536px) {
+  .contact__heading {
+      margin: 0;
+    font-size: 50px;
+    line-height: 46px;
+  }
+
+  .contact__input {
+    width: 320px;
+  }
+
+  .contact__btn {
+      margin-left: 90px;
+  }
+}
